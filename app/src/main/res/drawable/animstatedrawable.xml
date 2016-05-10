@@ -1,0 +1,26 @@
+<animated-selector
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/checked" android:drawable="@drawable/rect0"
+        android:state_checked="true"/>
+
+    <item android:id="@+id/unchecked"
+        android:drawable="@drawable/rect180"/>
+
+    <transition android:fromId="@id/unchecked"
+        android:toId="@id/checked" >
+
+        <animation-list>
+            <item android:duration="100" android:drawable="@drawable/rect45"/>
+            <item android:duration="100" android:drawable="@drawable/rect90"/>
+            <item android:duration="100" android:drawable="@drawable/rect135"/>
+            <item android:duration="100" android:drawable="@drawable/rect180"/>
+            <item android:duration="100" android:drawable="@drawable/rect225"/>
+            <item android:duration="100" android:drawable="@drawable/rect270"/>
+            <item android:duration="100" android:drawable="@drawable/rect315"/>
+            <item android:duration="100" android:drawable="@drawable/rect0"/>
+        </animation-list>
+
+    </transition>
+
+</animated-selector>

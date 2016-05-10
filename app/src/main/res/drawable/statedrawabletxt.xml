@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+    <item android:drawable="@drawable/rect" android:state_window_focused="false" />
+
+    <item android:drawable="@drawable/rect45" android:state_enabled="false" />
+
+    <item android:drawable="@drawable/rect90" android:state_pressed="true" />
+    <item android:drawable="@drawable/rect180" android:state_activated="true" />
+    <item android:drawable="@drawable/rect135" android:state_selected="true" />
+    <item android:drawable="@drawable/rect315" />
+
+
+</selector>

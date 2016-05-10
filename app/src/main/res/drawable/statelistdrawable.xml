@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+     android:enterFadeDuration="1000" android:exitFadeDuration="1000">
+    <!--android:autoMirrored="true" android:autoMirrored 设置图片是否需要镜像反转，当布局方向是RTL，即从右到左布局时才有用，API Level 19(Android 4.4)才添加的属性-->
+    <!--android:constantSize="false" 默认为false,大小会发生变化,如果为 true，可绘制的大小将保持不变;大小是最大的drawable item的大小-->
+    <!--先来介绍tileMode（平铺）-->
+    <!--它的效果类似于 让背景小图不是拉伸而是多个重复（类似于将一张小图设置电脑桌面时的效果）-->
+    <!--Dither ARGB888 RGB585 设备自动映射，默认为false（图像的抖动处理，当每个颜色值以低于8位表示时，对应图像做抖动处理可以实现在可显示颜色总数比较低（比如256色）时还保持较好的显示效果-->
+    <!--android:variablePadding  If true, allows the drawable's padding to change based on the current state that is selected-->
+    <!-- 从上往下匹配，不做精确匹配，在上面的出现的几率越小，下面的出现的几率大-->
+    <item android:drawable="@drawable/rect" android:state_window_focused="false" />
+
+    <item android:drawable="@drawable/rect" android:state_focused="true" />
+
+    <item android:drawable="@drawable/rect135" android:state_selected="true" />
+
+    <!-- 只触发了下面的两个状态-->
+    <item android:drawable="@drawable/rect90" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/circle" android:state_focused="false" />
+
+    <item android:drawable="@drawable/rect315" />
+
+</selector>
